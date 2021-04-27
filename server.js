@@ -20,6 +20,6 @@ app.set('view engine', 'handlebars');
 // app.use(require('./controllers/dish-routes'));
 
 // Starts the server to begin listening
-sequelize.sync({ force: false }).then(() => {
+sequelize.sync({ force: true }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
